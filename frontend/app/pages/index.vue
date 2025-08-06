@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import IntroductionCard from '~/components/IntroductionCard/IntroductionCard.vue';
+</script>
+
 <template>
   <div>
-    <p>This is the index page</p>
+    <IntroductionCard />
   </div>
 </template>
