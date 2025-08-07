@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import IntroductionCard from '~/components/IntroductionCard/IntroductionCard.vue';
-import LandingPage from '~/components/LandingPage/LandingPage.vue'
+import LandingPage from "~/components/LandingPage/LandingPage.vue";
+import Experiences from "~/components/Experiences/Experiences.vue";
+import Education from "~/components/Education/Education.vue";
 </script>
 
 <template>
-  <UContainer>
+  <div class="w-full h-full">
     <LandingPage />
-    <IntroductionCard />
-  </UContainer>
+    <div class="grid grid-cols-1">
+      <Experiences />
+    </div>
+  </div>
 </template>

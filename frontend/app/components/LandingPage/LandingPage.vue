@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, computed } from "vue";
+import IntroductionCard from "../IntroductionCard/IntroductionCard.vue";
 
 export interface RoleConfig {
   role: string;
@@ -29,7 +30,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section
-    class="relative w-full h-screen bg-cover bg-center"
+    class="relative w-full bg-cover bg-center h-75vh"
     style="
       background-image: url(https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940);
     "
@@ -42,7 +43,7 @@ onBeforeUnmount(() => {
       as="div"
       class="relative z-10 flex flex-col items-center text-center mt-24 space-y-6"
     >
-      <h1 class="text-5xl font-bold">
+      <h1 class="text-6xl font-bold">
         <transition name="role-fade" mode="out-in">
           <!-- :key ensures Vue knows when to animate -->
           <span :key="currentRole" :class="current?.textColor">{{
@@ -67,7 +68,9 @@ onBeforeUnmount(() => {
         I build cool things on the web and beyond.
       </h2>
 
-      <NuxtLink to="/cliFeature">
+      <IntroductionCard />
+
+      <!-- <NuxtLink to="/cliFeature">
         <UButton
           variant="subtle"
           class="bg-white h-full rounded-lg px-4 py-2 gap-2 inline-flex items-center cursor-pointer"
@@ -80,7 +83,7 @@ onBeforeUnmount(() => {
           </template>
           <span class="text-xl leading-none">Try Out a Feature</span>
         </UButton>
-      </NuxtLink>
+      </NuxtLink> -->
     </UContainer>
   </section>
 </template>

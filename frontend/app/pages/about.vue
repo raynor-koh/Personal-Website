@@ -1,5 +1,8 @@
+<script setup lang="ts">
+import Education from '~/components/Education/Education.vue';
+</script>
 <template>
-  <div>
-    <p>This is the about page</p>
+  <div class="w-full h-full">
+    <Education />
   </div>
 </template>

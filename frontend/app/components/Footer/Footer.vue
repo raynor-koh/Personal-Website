@@ -1,8 +1,16 @@
-<script lang="ts">
-</script>
+<script lang="ts"></script>
 
 <template>
   <footer class="p-4 text-center text-sm bg-gray-800 text-white">
-    This site is built using <UIcon name="logos:nuxt-icon"/> Nuxt.JS and <UIcon name="logos:typescript-icon"/> TypeScript.
+    <div class="flex flex-row justify-between">
+      <span class="flex flex-row gap-2 items-center"
+        ><UIcon name="lucide:copyright" />
+        <p>2025 | Raynor Koh</p></span
+      >
+      <span class="items-center"
+        >This site is built using <UIcon name="logos:nuxt-icon" /> Nuxt.JS and
+        <UIcon name="logos:typescript-icon" /> TypeScript.</span
+      >
+    </div>
   </footer>
 </template>
