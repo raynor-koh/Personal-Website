@@ -11,6 +11,8 @@
         >This site is built using <UIcon name="logos:nuxt-icon" /> Nuxt.JS and
         <UIcon name="logos:typescript-icon" /> TypeScript.</span
       >
+      <!-- TODO: Add way to track views-->
+      <span>0 views</span>
     </div>
   </footer>
 </template>

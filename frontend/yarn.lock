@@ -802,6 +802,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/lucide@^1.2.61":
+  version "1.2.61"
+  resolved "https://registry.yarnpkg.com/@iconify-json/lucide/-/lucide-1.2.61.tgz#e6d749c4cf6c66481874b9a1ee2fa750c5e80b16"
+  integrity sha512-0sLmi3vyEsJ6XL/uhl0a+uphdYIW1viYkUmiuT4SK3e2R3o3GIWY9k8N+SZL++GVBbMKy9oatx8KrzyoPZ6WqQ==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/material-symbols@^1.2.30":
   version "1.2.30"
   resolved "https://registry.yarnpkg.com/@iconify-json/material-symbols/-/material-symbols-1.2.30.tgz#539c3a7d2fa0b62b41870a4a33467ec76656cb8f"

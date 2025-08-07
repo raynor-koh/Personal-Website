@@ -52,13 +52,13 @@ const experiences: Experience[] = [
 <template>
   <section class="w-full py-12">
     <UContainer class="space-y-8">
-      <h2 class="text-white text-3xl font-bold">Experiences</h2>
+      <h2 class="text-white text-3xl font-bold">Employment History</h2>
 
-      <div class="grid grid-cols-1 gap-6">
+      <div class="overflow-y-auto max-h-[50vh] scrollbar-thin scrollbar-thumb-gray-500 flex flex-col space-y-6 px-4">
         <div
           v-for="(exp, idx) in experiences"
           :key="idx"
-          class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-start gap-6 max-w-xl"
+          class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-start gap-y-6 max-w-xl"
         >
           <div class="flex-1 flex flex-col space-y-4 w-full">
             <div class="flex items-center justify-between">

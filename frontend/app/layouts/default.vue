@@ -1,10 +1,10 @@
 <script setup>
-import TopBar from '~/components/TopBar/TopBar.vue'
-import Footer from '~/components/Footer/Footer.vue'
+import TopBar from '~/components/TopBar.vue'
+import Footer from '~/components/Footer.vue'
 </script>
 
 <template>
-  <div class="min-h-lvw flex flex-col bg-black">
+  <div class="flex flex-col bg-black">
     <TopBar />
 
     <main class="flex-1">
