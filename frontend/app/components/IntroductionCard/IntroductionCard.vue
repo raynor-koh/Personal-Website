@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <UContainer class="flex flex-col mx-auto justify-center space-y-5 px-4 max-w-3xl w-full bg-white">
+    <UContainer class="flex flex-col mx-auto justify-center space-y-5 px-4 max-w-3xl bg-white">
 
         <h2 class="text-black text-left text-4xl">Hey! <span>I'm Raynor Koh.</span></h2>
         <p class="text-subtext0 text-lg leading-relaxed">A penultimate student majoring in Computer Science at the
