@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ProjectCard from "~/components/Projects/ProjectCard.vue";
 import type { Project } from "~/components/Projects/ProjectCard.vue";
+import PageHeader from "~/components/common/PageHeader.vue";
 
 const projects: Project[] = [
   {
@@ -41,19 +42,12 @@ const sorted = computed(() =>
 
 <template>
   <div class="bg-black">
-    <div class="px-8 py-6">
-      <div
-        class="flex items-center text-white text-4xl font-semibold gap-3 mb-8"
-      >
-        <UIcon name="material-symbols:folder-copy" class="w-8 h-8" />
-        <h1>Projects</h1>
-      </div>
+    <PageHeader icon="material-symbols:folder-copy" header="Projects" />
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-      >
-        <ProjectCard v-for="p in sorted" :key="p.title" v-bind="p" />
-      </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"
+    >
+      <ProjectCard v-for="p in sorted" :key="p.title" v-bind="p" />
     </div>
   </div>
 </template>

@@ -23,19 +23,19 @@ const educations: Education[] = [
 </script>
 
 <template>
-  <section class="w-full py-12">
-    <UContainer class="space-y-8">
+  <section class="w-full">
+    <div class="space-y-8 p-0">
       <h2 class="text-white text-3xl font-bold">Education</h2>
 
       <div class="grid grid-cols-1 gap-6">
-        <div
-          v-for="(edu, index) in educations"
-          :key="index"
-          class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-start gap-6 max-w-xl"
-        >
+        <div v-for="(edu, index) in educations" :key="index"
+          class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-start gap-6">
           <div>
             <div class="flex items-center space-x-2">
-              <UIcon :name="edu.flagIcon" class="w-6 h-6" />
+              <div class="w-8 h-5 shrink-0">
+                <UIcon :name="edu.flagIcon" class="w-full h-full" />
+              </div>
+
               <h3 class="text-xl font-semibold text-gray-900">
                 {{ edu.university }}
               </h3>
@@ -48,6 +48,6 @@ const educations: Education[] = [
           </div>
         </div>
       </div>
-    </UContainer>
+    </div>
   </section>
 </template>

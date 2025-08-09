@@ -19,7 +19,7 @@ const props = defineProps<Project>();
 
 <template>
   <div
-    class="relative block bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition"
+    class="relative block bg-gray-800 rounded-lg"
   >
     <!-- status badge in top-right -->
     <div v-if="props.status" class="absolute top-3 right-3">
@@ -59,7 +59,7 @@ const props = defineProps<Project>();
       <p class="text-gray-300 mt-2 line-clamp-3">{{ props.description }}</p>
       <div class="flex flex-row justify-between mt-4">
         <!-- tags -->
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2 items-center">
           <span
             v-for="tag in tags"
             :key="tag"
@@ -70,7 +70,7 @@ const props = defineProps<Project>();
         </div>
         <div>
           <NuxtLink :to="props.href" target="_blank">
-            <UIcon name="mdi:github" class="fill-current text-white"/>
+            <UIcon name="mdi:github" class="text-white" :size="32"/>
           </NuxtLink>
         </div>
       </div>
