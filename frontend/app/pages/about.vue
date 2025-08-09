@@ -23,7 +23,7 @@ const locationTime: string = "SGT"
     <UContainer>
       <div class="grid grid-cols-1 md:grid-cols-2 items-stretch gap-2">
         <div class="flex items-center justify-center bg-slate-800 rounded-lg p-4">
-          <NuxtImg src="/img/avatar_photo.jpg" class="border-4 border-white shadow-lg max-h-full object-contain" />
+          <NuxtImg src="/img/avatar_photo.jpg" class="shadow-lg h-full object-contain" />
         </div>
 
         <div class="flex flex-col bg-slate-800 rounded-lg p-6">
