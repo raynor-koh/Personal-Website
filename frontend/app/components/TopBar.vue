@@ -11,6 +11,7 @@
     <!-- Page links -->
     <ul class="flex space-x-4">
       <li class="text-white text-lg"><NuxtLink to="/about">About</NuxtLink></li>
+      <li class="text-white text-lg"><NuxtLink to="/projects">Projects</NuxtLink></li>
     </ul>
 
   </nav>

@@ -4,7 +4,7 @@ import Experiences from "~/components/Experiences.vue";
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="w-full">
     <!-- Header -->
     <div class="py-6 px-8">
       <div class="flex items-center text-white text-4xl font-semibold gap-3">
