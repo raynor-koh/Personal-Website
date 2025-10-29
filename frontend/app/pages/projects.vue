@@ -25,6 +25,16 @@ const projects: Project[] = [
     thumbnail: "/img/nuxt_logo.png",
     status: "in-progress",
   },
+  {
+    title: "Update Outdated Applications",
+    description: "Update the outdated mobile and desktop applications",
+    tags: ["React Native", "Python"],
+    year: 2025,
+    month: 9,
+    href: "https://github.com/raynor-koh/Reverse-Engineer-Day-Code-App",
+    thumbnail: "/img/reverse_engineer.png",
+    status: "completed",
+  },
 ];
 
 const sorted = computed(() =>

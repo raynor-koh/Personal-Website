@@ -18,9 +18,7 @@ const props = defineProps<Project>();
 </script>
 
 <template>
-  <div
-    class="relative block bg-gray-800 rounded-lg"
-  >
+  <div class="relative block bg-gray-800 rounded-lg">
     <!-- status badge in top-right -->
     <div v-if="props.status" class="absolute top-3 right-3">
       <span
@@ -36,7 +34,8 @@ const props = defineProps<Project>();
     </div>
 
     <!-- screenshot / window slot -->
-    <div class="bg-gray-900">
+    <!-- screenshot / window slot -->
+    <div class="bg-gray-900 rounded-t-lg overflow-hidden">
       <div
         class="flex items-center justify-between px-4 py-2 border-b border-gray-700"
       >
@@ -46,9 +45,17 @@ const props = defineProps<Project>();
           <span class="h-3 w-3 rounded-full bg-green-500"></span>
         </div>
       </div>
-      <div class="h-40 overflow-hidden">
+
+      <div class="h-40">
         <slot name="window">
-          <div class="w-full h-full bg-gray-900"></div>
+          <img
+            :src="props.thumbnail ?? '/img/nuxt_logo.png'"
+            :alt="
+              props.title ? props.title + ' thumbnail' : 'project thumbnail'
+            "
+            class="block w-full h-full object-cover"
+            loading="lazy"
+          />
         </slot>
       </div>
     </div>
@@ -70,7 +77,7 @@ const props = defineProps<Project>();
         </div>
         <div>
           <NuxtLink :to="props.href" target="_blank">
-            <UIcon name="mdi:github" class="text-white" :size="32"/>
+            <UIcon name="mdi:github" class="text-white" :size="32" />
           </NuxtLink>
         </div>
       </div>
